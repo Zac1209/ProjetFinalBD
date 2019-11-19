@@ -71,6 +71,12 @@
     <Compile Include="frmConnexion.Designer.cs">
       <DependentUpon>frmConnexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDepense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepense.Designer.cs">
+      <DependentUpon>frmDepense.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGestionEmploye.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConnexion.resx">
       <DependentUpon>frmConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepense.resx">
+      <DependentUpon>frmDepense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGestionEmploye.resx">
       <DependentUpon>frmGestionEmploye.cs</DependentUpon>
