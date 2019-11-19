@@ -106,5 +106,10 @@ namespace ProjetFinalBD_ZacaryChevrier
                 }
             }
         }
+
+        private void btnQuitApp_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
+        }
     }
 }

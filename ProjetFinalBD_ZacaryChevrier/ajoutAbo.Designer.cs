@@ -65,6 +65,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtDateAbo = new System.Windows.Forms.DateTimePicker();
             this.label18 = new System.Windows.Forms.Label();
+            this.btnQuitApp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -354,7 +355,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 48;
-            this.btnExit.Text = "Quitter";
+            this.btnExit.Text = "Retour";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -392,12 +393,23 @@
             this.label18.TabIndex = 52;
             this.label18.Text = "Date d\'abonnement";
             // 
+            // btnQuitApp
+            // 
+            this.btnQuitApp.Location = new System.Drawing.Point(93, 447);
+            this.btnQuitApp.Name = "btnQuitApp";
+            this.btnQuitApp.Size = new System.Drawing.Size(136, 23);
+            this.btnQuitApp.TabIndex = 53;
+            this.btnQuitApp.Text = "Quitter l\'application";
+            this.btnQuitApp.UseVisualStyleBackColor = true;
+            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
+            // 
             // ajoutAbo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(677, 479);
+            this.Controls.Add(this.btnQuitApp);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.dtDateAbo);
             this.Controls.Add(this.label1);
@@ -478,5 +490,6 @@
         private System.Windows.Forms.DateTimePicker dtNaissance;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DateTimePicker dtDateAbo;
+        private System.Windows.Forms.Button btnQuitApp;
     }
 }

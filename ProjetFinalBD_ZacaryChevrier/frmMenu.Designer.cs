@@ -39,6 +39,8 @@
             this.inscriptionDuneDépenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationDesRapportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationDesStatistiquesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnLogOff = new System.Windows.Forms.Button();
+            this.btnQuitApp = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             this.actionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(732, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,11 +135,33 @@
             this.visualisationDesStatistiquesToolStripMenuItem.Text = "Visualisation des statistiques";
             this.visualisationDesStatistiquesToolStripMenuItem.Click += new System.EventHandler(this.visualisationDesStatistiquesToolStripMenuItem_Click);
             // 
+            // btnLogOff
+            // 
+            this.btnLogOff.Location = new System.Drawing.Point(12, 400);
+            this.btnLogOff.Name = "btnLogOff";
+            this.btnLogOff.Size = new System.Drawing.Size(86, 23);
+            this.btnLogOff.TabIndex = 9;
+            this.btnLogOff.Text = "Déconnexion";
+            this.btnLogOff.UseVisualStyleBackColor = true;
+            this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
+            // 
+            // btnQuitApp
+            // 
+            this.btnQuitApp.Location = new System.Drawing.Point(113, 400);
+            this.btnQuitApp.Name = "btnQuitApp";
+            this.btnQuitApp.Size = new System.Drawing.Size(86, 23);
+            this.btnQuitApp.TabIndex = 10;
+            this.btnQuitApp.Text = "Quitter l\'application";
+            this.btnQuitApp.UseVisualStyleBackColor = true;
+            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(732, 435);
+            this.Controls.Add(this.btnQuitApp);
+            this.Controls.Add(this.btnLogOff);
             this.Controls.Add(this.lblBienvenue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -164,5 +188,7 @@
         private System.Windows.Forms.ToolStripMenuItem inscriptionDuneDépenseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualisationDesRapportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualisationDesStatistiquesToolStripMenuItem;
+        private System.Windows.Forms.Button btnLogOff;
+        private System.Windows.Forms.Button btnQuitApp;
     }
 }

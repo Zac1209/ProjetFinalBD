@@ -36,7 +36,9 @@ namespace ProjetFinalBD_ZacaryChevrier
 
         private void réabonnementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new frmReabonnement()).ShowDialog();
+            this.Show();
         }
 
         private void majDesAbonnésToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,6 +59,16 @@ namespace ProjetFinalBD_ZacaryChevrier
         private void visualisationDesStatistiquesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogOff_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnQuitApp_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
         }
     }
 }

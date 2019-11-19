@@ -474,5 +474,9 @@ namespace ProjetFinalBD_ZacaryChevrier
             cbProvince.Enabled = false;
         }
 
+        private void btnQuitApp_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
+        }
     }
 }

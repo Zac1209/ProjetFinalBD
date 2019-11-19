@@ -69,6 +69,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbSalaire = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnQuitApp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -427,9 +428,19 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 48;
-            this.btnExit.Text = "Quitter";
+            this.btnExit.Text = "Retour";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnQuitApp
+            // 
+            this.btnQuitApp.Location = new System.Drawing.Point(96, 473);
+            this.btnQuitApp.Name = "btnQuitApp";
+            this.btnQuitApp.Size = new System.Drawing.Size(136, 23);
+            this.btnQuitApp.TabIndex = 49;
+            this.btnQuitApp.Text = "Quitter l\'application";
+            this.btnQuitApp.UseVisualStyleBackColor = true;
+            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
             // 
             // ajoutModEmploye
             // 
@@ -437,6 +448,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(677, 508);
+            this.Controls.Add(this.btnQuitApp);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbSalaire);
@@ -526,5 +538,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSalaire;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnQuitApp;
     }
 }
