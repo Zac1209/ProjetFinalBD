@@ -1,0 +1,515 @@
+﻿namespace ProjetFinalBD_ZacaryChevrier
+{
+    partial class ajoutEmploye
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.tbMDP = new System.Windows.Forms.TextBox();
+            this.tbNom = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbPrenom = new System.Windows.Forms.TextBox();
+            this.tbNoCivique = new System.Windows.Forms.TextBox();
+            this.tbRemarque = new System.Windows.Forms.TextBox();
+            this.tbNo = new System.Windows.Forms.TextBox();
+            this.tbRue = new System.Windows.Forms.TextBox();
+            this.tbVille = new System.Windows.Forms.TextBox();
+            this.lblNo = new System.Windows.Forms.Label();
+            this.lblMDP = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.cbSexe = new System.Windows.Forms.ComboBox();
+            this.cbTypeAbo = new System.Windows.Forms.ComboBox();
+            this.cbProvince = new System.Windows.Forms.ComboBox();
+            this.tbCell = new System.Windows.Forms.MaskedTextBox();
+            this.tbTel = new System.Windows.Forms.MaskedTextBox();
+            this.tbCodePostal = new System.Windows.Forms.MaskedTextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.tbAge = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbSalaire = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tbMDP
+            // 
+            this.tbMDP.Location = new System.Drawing.Point(148, 242);
+            this.tbMDP.Name = "tbMDP";
+            this.tbMDP.PasswordChar = '*';
+            this.tbMDP.Size = new System.Drawing.Size(132, 20);
+            this.tbMDP.TabIndex = 0;
+            this.tbMDP.Validating += new System.ComponentModel.CancelEventHandler(this.tbMDP_Validating);
+            // 
+            // tbNom
+            // 
+            this.tbNom.Location = new System.Drawing.Point(148, 137);
+            this.tbNom.Name = "tbNom";
+            this.tbNom.Size = new System.Drawing.Size(132, 20);
+            this.tbNom.TabIndex = 1;
+            this.tbNom.Validating += new System.ComponentModel.CancelEventHandler(this.tbNom_Validating);
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.Location = new System.Drawing.Point(148, 320);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(132, 20);
+            this.tbEmail.TabIndex = 2;
+            this.tbEmail.Validating += new System.ComponentModel.CancelEventHandler(this.tbEmail_Validating);
+            // 
+            // tbPrenom
+            // 
+            this.tbPrenom.Location = new System.Drawing.Point(148, 163);
+            this.tbPrenom.Name = "tbPrenom";
+            this.tbPrenom.Size = new System.Drawing.Size(132, 20);
+            this.tbPrenom.TabIndex = 4;
+            this.tbPrenom.Validating += new System.ComponentModel.CancelEventHandler(this.tbPrenom_Validating);
+            // 
+            // tbNoCivique
+            // 
+            this.tbNoCivique.Location = new System.Drawing.Point(444, 159);
+            this.tbNoCivique.Name = "tbNoCivique";
+            this.tbNoCivique.Size = new System.Drawing.Size(128, 20);
+            this.tbNoCivique.TabIndex = 8;
+            this.tbNoCivique.Validating += new System.ComponentModel.CancelEventHandler(this.tbNoCivique_Validating);
+            // 
+            // tbRemarque
+            // 
+            this.tbRemarque.Location = new System.Drawing.Point(148, 398);
+            this.tbRemarque.Multiline = true;
+            this.tbRemarque.Name = "tbRemarque";
+            this.tbRemarque.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tbRemarque.Size = new System.Drawing.Size(132, 47);
+            this.tbRemarque.TabIndex = 10;
+            // 
+            // tbNo
+            // 
+            this.tbNo.Enabled = false;
+            this.tbNo.Location = new System.Drawing.Point(148, 111);
+            this.tbNo.Name = "tbNo";
+            this.tbNo.Size = new System.Drawing.Size(132, 20);
+            this.tbNo.TabIndex = 13;
+            // 
+            // tbRue
+            // 
+            this.tbRue.Location = new System.Drawing.Point(444, 185);
+            this.tbRue.Name = "tbRue";
+            this.tbRue.Size = new System.Drawing.Size(128, 20);
+            this.tbRue.TabIndex = 14;
+            this.tbRue.Validating += new System.ComponentModel.CancelEventHandler(this.tbRue_Validating);
+            // 
+            // tbVille
+            // 
+            this.tbVille.Location = new System.Drawing.Point(444, 211);
+            this.tbVille.Name = "tbVille";
+            this.tbVille.Size = new System.Drawing.Size(128, 20);
+            this.tbVille.TabIndex = 16;
+            this.tbVille.Validating += new System.ComponentModel.CancelEventHandler(this.tbVille_Validating);
+            // 
+            // lblNo
+            // 
+            this.lblNo.AutoSize = true;
+            this.lblNo.Location = new System.Drawing.Point(98, 114);
+            this.lblNo.Name = "lblNo";
+            this.lblNo.Size = new System.Drawing.Size(44, 13);
+            this.lblNo.TabIndex = 17;
+            this.lblNo.Text = "Numéro";
+            // 
+            // lblMDP
+            // 
+            this.lblMDP.AutoSize = true;
+            this.lblMDP.Location = new System.Drawing.Point(71, 245);
+            this.lblMDP.Name = "lblMDP";
+            this.lblMDP.Size = new System.Drawing.Size(71, 13);
+            this.lblMDP.TabIndex = 18;
+            this.lblMDP.Text = "Mot de passe";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(113, 140);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Nom";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(99, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Prénom";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(111, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Sexe";
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(116, 219);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(26, 13);
+            this.lblAge.TabIndex = 23;
+            this.lblAge.Text = "Âge";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(357, 162);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Numéro civique";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(411, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Rue";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(412, 214);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(26, 13);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Ville";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(389, 266);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Province";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(375, 240);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Code postal";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(84, 271);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Téléphone";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(93, 297);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 13);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Cellulaire";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(100, 323);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 13);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Courriel";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(41, 375);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(101, 13);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Type d\'abonnement";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(86, 401);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 13);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Remarque";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(187, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(323, 39);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Ajout d\'un employé";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(100, 95);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(151, 13);
+            this.label16.TabIndex = 35;
+            this.label16.Text = "Informations personnelles";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(432, 136);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 13);
+            this.label17.TabIndex = 36;
+            this.label17.Text = "Adresse";
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.Location = new System.Drawing.Point(444, 406);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(92, 39);
+            this.btnAjouter.TabIndex = 37;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            // 
+            // cbSexe
+            // 
+            this.cbSexe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSexe.FormattingEnabled = true;
+            this.cbSexe.Items.AddRange(new object[] {
+            "h;1",
+            "f;2"});
+            this.cbSexe.Location = new System.Drawing.Point(148, 189);
+            this.cbSexe.Name = "cbSexe";
+            this.cbSexe.Size = new System.Drawing.Size(132, 21);
+            this.cbSexe.TabIndex = 38;
+            // 
+            // cbTypeAbo
+            // 
+            this.cbTypeAbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTypeAbo.FormattingEnabled = true;
+            this.cbTypeAbo.Location = new System.Drawing.Point(148, 372);
+            this.cbTypeAbo.Name = "cbTypeAbo";
+            this.cbTypeAbo.Size = new System.Drawing.Size(132, 21);
+            this.cbTypeAbo.TabIndex = 40;
+            // 
+            // cbProvince
+            // 
+            this.cbProvince.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProvince.FormattingEnabled = true;
+            this.cbProvince.Location = new System.Drawing.Point(444, 263);
+            this.cbProvince.Name = "cbProvince";
+            this.cbProvince.Size = new System.Drawing.Size(128, 21);
+            this.cbProvince.TabIndex = 41;
+            // 
+            // tbCell
+            // 
+            this.tbCell.Location = new System.Drawing.Point(148, 294);
+            this.tbCell.Mask = "(000) 000-0000";
+            this.tbCell.Name = "tbCell";
+            this.tbCell.Size = new System.Drawing.Size(132, 20);
+            this.tbCell.TabIndex = 42;
+            this.tbCell.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbCell.Validating += new System.ComponentModel.CancelEventHandler(this.tbCell_Validating);
+            // 
+            // tbTel
+            // 
+            this.tbTel.Location = new System.Drawing.Point(148, 268);
+            this.tbTel.Mask = "(000) 000-0000";
+            this.tbTel.Name = "tbTel";
+            this.tbTel.Size = new System.Drawing.Size(132, 20);
+            this.tbTel.TabIndex = 43;
+            this.tbTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.tbTel.Validating += new System.ComponentModel.CancelEventHandler(this.tbTel_Validating);
+            // 
+            // tbCodePostal
+            // 
+            this.tbCodePostal.Location = new System.Drawing.Point(444, 237);
+            this.tbCodePostal.Name = "tbCodePostal";
+            this.tbCodePostal.Size = new System.Drawing.Size(128, 20);
+            this.tbCodePostal.TabIndex = 44;
+            this.tbCodePostal.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodePostal_Validating);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // tbAge
+            // 
+            this.tbAge.Location = new System.Drawing.Point(148, 216);
+            this.tbAge.Name = "tbAge";
+            this.tbAge.Size = new System.Drawing.Size(132, 20);
+            this.tbAge.TabIndex = 45;
+            this.tbAge.Validating += new System.ComponentModel.CancelEventHandler(this.tbAge_Validating);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(90, 349);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Salaire/H";
+            // 
+            // tbSalaire
+            // 
+            this.tbSalaire.Location = new System.Drawing.Point(148, 346);
+            this.tbSalaire.Name = "tbSalaire";
+            this.tbSalaire.Size = new System.Drawing.Size(132, 20);
+            this.tbSalaire.TabIndex = 46;
+            this.tbSalaire.Validating += new System.ComponentModel.CancelEventHandler(this.tbSalaire_Validating);
+            // 
+            // ajoutEmploye
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ClientSize = new System.Drawing.Size(677, 508);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbSalaire);
+            this.Controls.Add(this.tbAge);
+            this.Controls.Add(this.tbCodePostal);
+            this.Controls.Add(this.tbTel);
+            this.Controls.Add(this.tbCell);
+            this.Controls.Add(this.cbProvince);
+            this.Controls.Add(this.cbTypeAbo);
+            this.Controls.Add(this.cbSexe);
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblMDP);
+            this.Controls.Add(this.lblNo);
+            this.Controls.Add(this.tbVille);
+            this.Controls.Add(this.tbRue);
+            this.Controls.Add(this.tbNo);
+            this.Controls.Add(this.tbRemarque);
+            this.Controls.Add(this.tbNoCivique);
+            this.Controls.Add(this.tbPrenom);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbNom);
+            this.Controls.Add(this.tbMDP);
+            this.Name = "ajoutEmploye";
+            this.Text = "ajoutEmploye";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tbMDP;
+        private System.Windows.Forms.TextBox tbNom;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbPrenom;
+        private System.Windows.Forms.TextBox tbNoCivique;
+        private System.Windows.Forms.TextBox tbRemarque;
+        private System.Windows.Forms.TextBox tbNo;
+        private System.Windows.Forms.TextBox tbRue;
+        private System.Windows.Forms.TextBox tbVille;
+        private System.Windows.Forms.Label lblNo;
+        private System.Windows.Forms.Label lblMDP;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.ComboBox cbSexe;
+        private System.Windows.Forms.ComboBox cbTypeAbo;
+        private System.Windows.Forms.ComboBox cbProvince;
+        private System.Windows.Forms.MaskedTextBox tbCell;
+        private System.Windows.Forms.MaskedTextBox tbTel;
+        private System.Windows.Forms.MaskedTextBox tbCodePostal;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox tbAge;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbSalaire;
+    }
+}
