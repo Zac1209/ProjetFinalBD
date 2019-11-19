@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -47,11 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ajoutEmploye.cs">
+    <Compile Include="ajoutAbo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ajoutEmploye.Designer.cs">
-      <DependentUpon>ajoutEmploye.cs</DependentUpon>
+    <Compile Include="ajoutAbo.Designer.cs">
+      <DependentUpon>ajoutAbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajoutModEmploye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajoutModEmploye.Designer.cs">
+      <DependentUpon>ajoutModEmploye.cs</DependentUpon>
     </Compile>
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
@@ -78,8 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ajoutEmploye.resx">
-      <DependentUpon>ajoutEmploye.cs</DependentUpon>
+    <EmbeddedResource Include="ajoutAbo.resx">
+      <DependentUpon>ajoutAbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajoutModEmploye.resx">
+      <DependentUpon>ajoutModEmploye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConnexion.resx">
       <DependentUpon>frmConnexion.cs</DependentUpon>

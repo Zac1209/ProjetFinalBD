@@ -12,11 +12,11 @@ namespace ProjetFinalBD_ZacaryChevrier
 {
     public partial class frmMenu : Form
     {
-        Employes user;
+        public static Employes userConnect;
         public frmMenu(Employes user)
         {
             InitializeComponent();
-            this.user = user;
+            userConnect = user;
             lblBienvenue.Text = "Bienvenue " + user.Prenom;
         }
 
@@ -29,7 +29,9 @@ namespace ProjetFinalBD_ZacaryChevrier
 
         private void abonnementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new ajoutAbo()).ShowDialog();
+            this.Show();
         }
 
         private void réabonnementToolStripMenuItem_Click(object sender, EventArgs e)

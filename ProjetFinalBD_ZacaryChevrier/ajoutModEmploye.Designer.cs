@@ -1,6 +1,6 @@
 ﻿namespace ProjetFinalBD_ZacaryChevrier
 {
-    partial class ajoutEmploye
+    partial class ajoutModEmploye
     {
         /// <summary>
         /// Required designer variable.
@@ -54,12 +54,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitre = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.cbSexe = new System.Windows.Forms.ComboBox();
-            this.cbTypeAbo = new System.Windows.Forms.ComboBox();
+            this.cbTypeEmpl = new System.Windows.Forms.ComboBox();
             this.cbProvince = new System.Windows.Forms.ComboBox();
             this.tbCell = new System.Windows.Forms.MaskedTextBox();
             this.tbTel = new System.Windows.Forms.MaskedTextBox();
@@ -68,6 +68,7 @@
             this.tbAge = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbSalaire = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -274,11 +275,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(41, 375);
+            this.label14.Location = new System.Drawing.Point(61, 375);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(101, 13);
+            this.label14.Size = new System.Drawing.Size(81, 13);
             this.label14.TabIndex = 32;
-            this.label14.Text = "Type d\'abonnement";
+            this.label14.Text = "Type d\'employé";
             // 
             // label15
             // 
@@ -289,16 +290,16 @@
             this.label15.TabIndex = 33;
             this.label15.Text = "Remarque";
             // 
-            // label1
+            // lblTitre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(187, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 39);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Ajout d\'un employé";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.Location = new System.Drawing.Point(187, 30);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Size = new System.Drawing.Size(323, 39);
+            this.lblTitre.TabIndex = 34;
+            this.lblTitre.Text = "Ajout d\'un employé";
+            this.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label16
             // 
@@ -325,7 +326,7 @@
             this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.Location = new System.Drawing.Point(444, 406);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(92, 39);
+            this.btnAjouter.Size = new System.Drawing.Size(114, 39);
             this.btnAjouter.TabIndex = 37;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
@@ -343,14 +344,14 @@
             this.cbSexe.Size = new System.Drawing.Size(132, 21);
             this.cbSexe.TabIndex = 38;
             // 
-            // cbTypeAbo
+            // cbTypeEmpl
             // 
-            this.cbTypeAbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTypeAbo.FormattingEnabled = true;
-            this.cbTypeAbo.Location = new System.Drawing.Point(148, 372);
-            this.cbTypeAbo.Name = "cbTypeAbo";
-            this.cbTypeAbo.Size = new System.Drawing.Size(132, 21);
-            this.cbTypeAbo.TabIndex = 40;
+            this.cbTypeEmpl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTypeEmpl.FormattingEnabled = true;
+            this.cbTypeEmpl.Location = new System.Drawing.Point(148, 372);
+            this.cbTypeEmpl.Name = "cbTypeEmpl";
+            this.cbTypeEmpl.Size = new System.Drawing.Size(132, 21);
+            this.cbTypeEmpl.TabIndex = 40;
             // 
             // cbProvince
             // 
@@ -384,9 +385,11 @@
             // tbCodePostal
             // 
             this.tbCodePostal.Location = new System.Drawing.Point(444, 237);
+            this.tbCodePostal.Mask = "L0L 0L0";
             this.tbCodePostal.Name = "tbCodePostal";
             this.tbCodePostal.Size = new System.Drawing.Size(128, 20);
             this.tbCodePostal.TabIndex = 44;
+            this.tbCodePostal.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.tbCodePostal.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodePostal_Validating);
             // 
             // errorProvider1
@@ -418,12 +421,23 @@
             this.tbSalaire.TabIndex = 46;
             this.tbSalaire.Validating += new System.ComponentModel.CancelEventHandler(this.tbSalaire_Validating);
             // 
-            // ajoutEmploye
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(12, 473);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 48;
+            this.btnExit.Text = "Quitter";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // ajoutModEmploye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(677, 508);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbSalaire);
             this.Controls.Add(this.tbAge);
@@ -431,12 +445,12 @@
             this.Controls.Add(this.tbTel);
             this.Controls.Add(this.tbCell);
             this.Controls.Add(this.cbProvince);
-            this.Controls.Add(this.cbTypeAbo);
+            this.Controls.Add(this.cbTypeEmpl);
             this.Controls.Add(this.cbSexe);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -462,7 +476,7 @@
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbNom);
             this.Controls.Add(this.tbMDP);
-            this.Name = "ajoutEmploye";
+            this.Name = "ajoutModEmploye";
             this.Text = "ajoutEmploye";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -497,12 +511,12 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.ComboBox cbSexe;
-        private System.Windows.Forms.ComboBox cbTypeAbo;
+        private System.Windows.Forms.ComboBox cbTypeEmpl;
         private System.Windows.Forms.ComboBox cbProvince;
         private System.Windows.Forms.MaskedTextBox tbCell;
         private System.Windows.Forms.MaskedTextBox tbTel;
@@ -511,5 +525,6 @@
         private System.Windows.Forms.TextBox tbAge;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSalaire;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.employesDataGridView = new System.Windows.Forms.DataGridView();
+            this.employesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnMod = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +52,7 @@
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.employesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -80,16 +80,20 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19});
+            this.dataGridViewTextBoxColumn17});
             this.employesDataGridView.DataSource = this.employesBindingSource;
             this.employesDataGridView.Location = new System.Drawing.Point(31, 79);
+            this.employesDataGridView.MultiSelect = false;
             this.employesDataGridView.Name = "employesDataGridView";
             this.employesDataGridView.ReadOnly = true;
+            this.employesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.employesDataGridView.Size = new System.Drawing.Size(714, 220);
             this.employesDataGridView.TabIndex = 1;
             this.employesDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.employesDataGridView_CellValidating);
+            // 
+            // employesBindingSource
+            // 
+            this.employesBindingSource.DataSource = typeof(ProjetFinalBD_ZacaryChevrier.Employes);
             // 
             // label1
             // 
@@ -113,12 +117,23 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(343, 345);
+            this.btnDelete.Location = new System.Drawing.Point(425, 345);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Supprimer";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnMod
+            // 
+            this.btnMod.Location = new System.Drawing.Point(328, 345);
+            this.btnMod.Name = "btnMod";
+            this.btnMod.Size = new System.Drawing.Size(75, 23);
+            this.btnMod.TabIndex = 10;
+            this.btnMod.Text = "Modifier";
+            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -239,29 +254,23 @@
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn18
+            // btnExit
             // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "TypesEmploye";
-            this.dataGridViewTextBoxColumn18.HeaderText = "TypesEmploye";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Provinces";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Provinces";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            // 
-            // employesBindingSource
-            // 
-            this.employesBindingSource.DataSource = typeof(ProjetFinalBD_ZacaryChevrier.Employes);
+            this.btnExit.Location = new System.Drawing.Point(12, 415);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.Text = "Quitter";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmGestionEmploye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnMod);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label1);
@@ -279,6 +288,10 @@
 
         private System.Windows.Forms.BindingSource employesBindingSource;
         private System.Windows.Forms.DataGridView employesDataGridView;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnMod;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -296,10 +309,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAjouter;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnExit;
     }
 }
