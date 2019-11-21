@@ -90,14 +90,13 @@
             // 
             // lblTitre
             // 
-            this.lblTitre.AutoSize = true;
             this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(111, 26);
+            this.lblTitre.Location = new System.Drawing.Point(12, 26);
             this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(262, 39);
+            this.lblTitre.Size = new System.Drawing.Size(431, 39);
             this.lblTitre.TabIndex = 35;
             this.lblTitre.Text = "Réabonnement";
-            this.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTitre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbRemarque
             // 

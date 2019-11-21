@@ -34,9 +34,9 @@
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesEmployésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abonnementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.réabonnementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mÀJDesAbonnésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inscriptionDuneDépenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reabonnementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mAJDesAbonnésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscriptionDuneDepenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationDesRapportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualisationDesStatistiquesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLogOff = new System.Windows.Forms.Button();
@@ -46,21 +46,23 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(319, 86);
+            this.label1.Location = new System.Drawing.Point(0, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 39);
+            this.label1.Size = new System.Drawing.Size(732, 39);
             this.label1.TabIndex = 6;
             this.label1.Text = "Menu";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblBienvenue
             // 
-            this.lblBienvenue.AutoSize = true;
-            this.lblBienvenue.Location = new System.Drawing.Point(351, 215);
+            this.lblBienvenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblBienvenue.Location = new System.Drawing.Point(0, 63);
             this.lblBienvenue.Name = "lblBienvenue";
-            this.lblBienvenue.Size = new System.Drawing.Size(0, 13);
+            this.lblBienvenue.Size = new System.Drawing.Size(732, 372);
             this.lblBienvenue.TabIndex = 7;
+            this.lblBienvenue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -77,9 +79,9 @@
             this.actionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionDesEmployésToolStripMenuItem,
             this.abonnementToolStripMenuItem,
-            this.réabonnementToolStripMenuItem,
-            this.mÀJDesAbonnésToolStripMenuItem,
-            this.inscriptionDuneDépenseToolStripMenuItem,
+            this.reabonnementToolStripMenuItem,
+            this.mAJDesAbonnésToolStripMenuItem,
+            this.inscriptionDuneDepenseToolStripMenuItem,
             this.visualisationDesRapportsToolStripMenuItem,
             this.visualisationDesStatistiquesToolStripMenuItem});
             this.actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
@@ -100,26 +102,26 @@
             this.abonnementToolStripMenuItem.Text = "Abonnement";
             this.abonnementToolStripMenuItem.Click += new System.EventHandler(this.abonnementToolStripMenuItem_Click);
             // 
-            // réabonnementToolStripMenuItem
+            // reabonnementToolStripMenuItem
             // 
-            this.réabonnementToolStripMenuItem.Name = "réabonnementToolStripMenuItem";
-            this.réabonnementToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.réabonnementToolStripMenuItem.Text = "Réabonnement";
-            this.réabonnementToolStripMenuItem.Click += new System.EventHandler(this.réabonnementToolStripMenuItem_Click);
+            this.reabonnementToolStripMenuItem.Name = "reabonnementToolStripMenuItem";
+            this.reabonnementToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.reabonnementToolStripMenuItem.Text = "Réabonnement";
+            this.reabonnementToolStripMenuItem.Click += new System.EventHandler(this.réabonnementToolStripMenuItem_Click);
             // 
-            // mÀJDesAbonnésToolStripMenuItem
+            // mAJDesAbonnésToolStripMenuItem
             // 
-            this.mÀJDesAbonnésToolStripMenuItem.Name = "mÀJDesAbonnésToolStripMenuItem";
-            this.mÀJDesAbonnésToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.mÀJDesAbonnésToolStripMenuItem.Text = "MÀJ des abonnés";
-            this.mÀJDesAbonnésToolStripMenuItem.Click += new System.EventHandler(this.majDesAbonnésToolStripMenuItem_Click);
+            this.mAJDesAbonnésToolStripMenuItem.Name = "mAJDesAbonnésToolStripMenuItem";
+            this.mAJDesAbonnésToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.mAJDesAbonnésToolStripMenuItem.Text = "MÀJ des abonnés";
+            this.mAJDesAbonnésToolStripMenuItem.Click += new System.EventHandler(this.majDesAbonnésToolStripMenuItem_Click);
             // 
-            // inscriptionDuneDépenseToolStripMenuItem
+            // inscriptionDuneDepenseToolStripMenuItem
             // 
-            this.inscriptionDuneDépenseToolStripMenuItem.Name = "inscriptionDuneDépenseToolStripMenuItem";
-            this.inscriptionDuneDépenseToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.inscriptionDuneDépenseToolStripMenuItem.Text = "Inscription d\'une dépense";
-            this.inscriptionDuneDépenseToolStripMenuItem.Click += new System.EventHandler(this.inscriptionDuneDepenseToolStripMenuItem_Click);
+            this.inscriptionDuneDepenseToolStripMenuItem.Name = "inscriptionDuneDepenseToolStripMenuItem";
+            this.inscriptionDuneDepenseToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.inscriptionDuneDepenseToolStripMenuItem.Text = "Inscription d\'une dépense";
+            this.inscriptionDuneDepenseToolStripMenuItem.Click += new System.EventHandler(this.inscriptionDuneDepenseToolStripMenuItem_Click);
             // 
             // visualisationDesRapportsToolStripMenuItem
             // 
@@ -183,9 +185,9 @@
         private System.Windows.Forms.ToolStripMenuItem actionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesEmployésToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abonnementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem réabonnementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mÀJDesAbonnésToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inscriptionDuneDépenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reabonnementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mAJDesAbonnésToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inscriptionDuneDepenseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualisationDesRapportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualisationDesStatistiquesToolStripMenuItem;
         private System.Windows.Forms.Button btnLogOff;

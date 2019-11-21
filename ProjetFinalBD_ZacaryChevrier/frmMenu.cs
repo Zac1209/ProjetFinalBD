@@ -18,6 +18,21 @@ namespace ProjetFinalBD_ZacaryChevrier
             InitializeComponent();
             userConnect = user;
             lblBienvenue.Text = "Bienvenue " + user.Prenom;
+            if (user.NoTypeEmploye > 2)
+                gestionDesEmployésToolStripMenuItem.Visible = false;
+            if(user.NoTypeEmploye > 3)
+            {
+                visualisationDesRapportsToolStripMenuItem.Visible = false;
+                visualisationDesStatistiquesToolStripMenuItem.Visible = false;
+            }
+            if(user.NoTypeEmploye > 4)
+            {
+                reabonnementToolStripMenuItem.Visible = false;
+                abonnementToolStripMenuItem.Visible = false;
+                mAJDesAbonnésToolStripMenuItem.Visible = false;
+            }
+            if (user.NoTypeEmploye == 4)
+                inscriptionDuneDepenseToolStripMenuItem.Visible = false;
         }
 
         private void gestionDesEmployésToolStripMenuItem_Click(object sender, EventArgs e)
