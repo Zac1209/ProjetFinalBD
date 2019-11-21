@@ -446,7 +446,7 @@
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbNom);
             this.Name = "ajoutAbo";
-            this.Text = "ajoutEmploye";
+            this.Text = "Abonnement";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

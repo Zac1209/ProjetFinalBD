@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.abonnementsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.abonnementsDataGridView = new System.Windows.Forms.DataGridView();
-            this.lblTitre = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTitre = new System.Windows.Forms.Label();
             this.tbRemarque = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRenew = new System.Windows.Forms.Button();
@@ -67,17 +67,6 @@
             this.abonnementsDataGridView.Size = new System.Drawing.Size(356, 220);
             this.abonnementsDataGridView.TabIndex = 1;
             // 
-            // lblTitre
-            // 
-            this.lblTitre.AutoSize = true;
-            this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(111, 26);
-            this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(262, 39);
-            this.lblTitre.TabIndex = 35;
-            this.lblTitre.Text = "Réabonnement";
-            this.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -98,6 +87,17 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Prenom";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // lblTitre
+            // 
+            this.lblTitre.AutoSize = true;
+            this.lblTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitre.Location = new System.Drawing.Point(111, 26);
+            this.lblTitre.Name = "lblTitre";
+            this.lblTitre.Size = new System.Drawing.Size(262, 39);
+            this.lblTitre.TabIndex = 35;
+            this.lblTitre.Text = "Réabonnement";
+            this.lblTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tbRemarque
             // 
@@ -160,7 +160,7 @@
             this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.abonnementsDataGridView);
             this.Name = "frmReabonnement";
-            this.Text = "frmReabonnement";
+            this.Text = "Réabonnement";
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsDataGridView)).EndInit();
             this.ResumeLayout(false);

@@ -489,7 +489,7 @@
             this.Controls.Add(this.tbNom);
             this.Controls.Add(this.tbMDP);
             this.Name = "ajoutModEmploye";
-            this.Text = "ajoutEmploye";
+            this.Text = "Employé";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

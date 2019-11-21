@@ -1208,7 +1208,7 @@ namespace ProjetFinalBD_ZacaryChevrier
 		
 		private System.DateTime _DateDepense;
 		
-		private decimal _Montant;
+		private double _Montant;
 		
 		private int _NoService;
 		
@@ -1228,7 +1228,7 @@ namespace ProjetFinalBD_ZacaryChevrier
     partial void OnIdAbonnementChanged();
     partial void OnDateDepenseChanging(System.DateTime value);
     partial void OnDateDepenseChanged();
-    partial void OnMontantChanging(decimal value);
+    partial void OnMontantChanging(double value);
     partial void OnMontantChanged();
     partial void OnNoServiceChanging(int value);
     partial void OnNoServiceChanged();
@@ -1308,7 +1308,7 @@ namespace ProjetFinalBD_ZacaryChevrier
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Montant", DbType="Money NOT NULL")]
-		public decimal Montant
+		public double Montant
 		{
 			get
 			{

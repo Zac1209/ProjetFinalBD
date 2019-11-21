@@ -119,7 +119,7 @@
             this.inscriptionDuneDépenseToolStripMenuItem.Name = "inscriptionDuneDépenseToolStripMenuItem";
             this.inscriptionDuneDépenseToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.inscriptionDuneDépenseToolStripMenuItem.Text = "Inscription d\'une dépense";
-            this.inscriptionDuneDépenseToolStripMenuItem.Click += new System.EventHandler(this.inscriptionDuneDépenseToolStripMenuItem_Click);
+            this.inscriptionDuneDépenseToolStripMenuItem.Click += new System.EventHandler(this.inscriptionDuneDepenseToolStripMenuItem_Click);
             // 
             // visualisationDesRapportsToolStripMenuItem
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
-            this.Text = "frmMenu";
+            this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

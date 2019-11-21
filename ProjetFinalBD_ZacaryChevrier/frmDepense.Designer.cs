@@ -94,6 +94,7 @@
             // 
             // tbMontant
             // 
+            this.tbMontant.DecimalPlaces = 2;
             this.tbMontant.Location = new System.Drawing.Point(142, 210);
             this.tbMontant.Maximum = new decimal(new int[] {
             1000,
@@ -192,11 +193,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(199, 9);
+            this.label6.Location = new System.Drawing.Point(107, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 39);
+            this.label6.Size = new System.Drawing.Size(345, 39);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Dépense";
+            this.label6.Text = "Ajout d\'une dépense";
             // 
             // frmDepense
             // 
@@ -215,7 +216,7 @@
             this.Controls.Add(this.tbMontant);
             this.Controls.Add(this.abonnementsDataGridView);
             this.Name = "frmDepense";
-            this.Text = "frmDepense";
+            this.Text = "Dépense";
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMontant)).EndInit();

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -79,12 +81,22 @@ namespace ProjetFinalBD_ZacaryChevrier
             int noDepense = (from unDep in monDataContext.Depenses
                              orderby unDep.No descending
                              select (int)unDep.No).FirstOrDefault() + 1;
+
+            var abonne = (from unAbo in monDataContext.Abonnements
+                                  where unAbo.Id == abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString()
+                                  select unAbo).FirstOrDefault();
+            var employe = (from unEmploye in monDataContext.Employes
+                           where unEmploye.No == serviceEmployeNo
+                           select unEmploye).FirstOrDefault();
+            DateTime dateDepense = DateTime.Now;
+            System.Globalization.NumberFormatInfo obj = new System.Globalization.NumberFormatInfo();
+            obj.NumberDecimalSeparator = ",";
             Depenses depense = new Depenses
             {
                 No = noDepense,
                 IdAbonnement = abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString(),
-                DateDepense = DateTime.Now,
-                Montant = tbMontant.Value,
+                DateDepense = dateDepense,
+                Montant = Convert.ToDouble(tbMontant.Value, obj),
                 NoService = serviceEmployeNo,
                 Remarque = tbRemarque.Text.Trim()
             };
@@ -93,6 +105,7 @@ namespace ProjetFinalBD_ZacaryChevrier
             {
                 monDataContext.SubmitChanges();
                 MessageBox.Show("Succès!", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                (new infoDepense(abonne.NoTypeAbonnement, abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString(),abonne.Nom + ", " + abonne.Prenom, dateDepense, tbMontant.Value,cbTypeService.SelectedText, employe.Nom + ", " + employe.Prenom)).ShowDialog();
                 this.Close();
             }
             catch (Exception e1)

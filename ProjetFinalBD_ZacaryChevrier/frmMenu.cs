@@ -43,22 +43,30 @@ namespace ProjetFinalBD_ZacaryChevrier
 
         private void majDesAbonnésToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new frmMAJAbo()).ShowDialog();
+            this.Show();
         }
 
-        private void inscriptionDuneDépenseToolStripMenuItem_Click(object sender, EventArgs e)
+        private void inscriptionDuneDepenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new frmDepense()).ShowDialog();
+            this.Show();
         }
 
         private void visualisationDesRapportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new frmRapport()).ShowDialog();
+            this.Show();
         }
 
         private void visualisationDesStatistiquesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            (new frmStats()).ShowDialog();
+            this.Show();
         }
 
         private void btnLogOff_Click(object sender, EventArgs e)
