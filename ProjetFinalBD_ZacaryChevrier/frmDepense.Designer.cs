@@ -44,6 +44,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnQuitApp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.abonnementsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMontant)).BeginInit();
@@ -199,11 +201,33 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Ajout d\'une dépense";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(8, 456);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(66, 23);
+            this.btnBack.TabIndex = 44;
+            this.btnBack.Text = "Retour";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnQuitApp
+            // 
+            this.btnQuitApp.Location = new System.Drawing.Point(80, 456);
+            this.btnQuitApp.Name = "btnQuitApp";
+            this.btnQuitApp.Size = new System.Drawing.Size(136, 23);
+            this.btnQuitApp.TabIndex = 43;
+            this.btnQuitApp.Text = "Quitter l\'application";
+            this.btnQuitApp.UseVisualStyleBackColor = true;
+            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
+            // 
             // frmDepense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.ClientSize = new System.Drawing.Size(538, 491);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnQuitApp);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAjouter);
             this.Controls.Add(this.label5);
@@ -242,5 +266,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnQuitApp;
     }
 }

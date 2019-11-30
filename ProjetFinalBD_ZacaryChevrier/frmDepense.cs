@@ -51,33 +51,35 @@ namespace ProjetFinalBD_ZacaryChevrier
                 cbTypeService.SelectedValue = frmMenu.userConnect.NoTypeEmploye;
                 cbTypeService.Enabled = false;
 
-                //Ajouter le service pour l'employé s'il n'existe pas
-                var service = (from unService in monDataContext.Services
-                              where unService.TypeService == cbTypeService.SelectedText && unService.NoEmploye == frmMenu.userConnect.No
-                              select unService).FirstOrDefault();
-                if(service == null)
-                {
-                    int noService = (from unService in monDataContext.Services
-                                     orderby unService.No descending
-                                     select (int)unService.No).FirstOrDefault() + 1;
-                    serviceEmployeNo = noService;
-                    Services serviceToAdd = new Services
-                    {
-                        No = noService,
-                        TypeService = cbTypeService.SelectedText,
-                        NoEmploye = frmMenu.userConnect.No
-                    };
-                    monDataContext.Services.InsertOnSubmit(serviceToAdd);
-                }
-                else
-                {
-                    serviceEmployeNo = service.No;
-                }
+             
             }
         }
 
         private void btnAjouter_Click(object sender, EventArgs e)
         {
+            //Ajouter le service pour l'employé s'il n'existe pas
+            var service = (from unService in monDataContext.Services
+                           where unService.TypeService.Equals(cbTypeService.Text) && unService.NoEmploye == frmMenu.userConnect.No
+                           select unService).FirstOrDefault();
+            if (service == null)
+            {
+                int noService = (from unService in monDataContext.Services
+                                 orderby unService.No descending
+                                 select (int)unService.No).FirstOrDefault() + 1;
+                serviceEmployeNo = noService;
+                Services serviceToAdd = new Services
+                {
+                    No = noService,
+                    TypeService = cbTypeService.Text,
+                    NoEmploye = frmMenu.userConnect.No
+                };
+                monDataContext.Services.InsertOnSubmit(serviceToAdd);
+            }
+            else
+            {
+                serviceEmployeNo = service.No;
+            }
+
             int noDepense = (from unDep in monDataContext.Depenses
                              orderby unDep.No descending
                              select (int)unDep.No).FirstOrDefault() + 1;
@@ -85,9 +87,6 @@ namespace ProjetFinalBD_ZacaryChevrier
             var abonne = (from unAbo in monDataContext.Abonnements
                                   where unAbo.Id == abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString()
                                   select unAbo).FirstOrDefault();
-            var employe = (from unEmploye in monDataContext.Employes
-                           where unEmploye.No == serviceEmployeNo
-                           select unEmploye).FirstOrDefault();
             DateTime dateDepense = DateTime.Now;
             System.Globalization.NumberFormatInfo obj = new System.Globalization.NumberFormatInfo();
             obj.NumberDecimalSeparator = ",";
@@ -105,7 +104,7 @@ namespace ProjetFinalBD_ZacaryChevrier
             {
                 monDataContext.SubmitChanges();
                 MessageBox.Show("Succès!", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                (new infoDepense(abonne.NoTypeAbonnement, abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString(),abonne.Nom + ", " + abonne.Prenom, dateDepense, tbMontant.Value,cbTypeService.SelectedText, employe.Nom + ", " + employe.Prenom)).ShowDialog();
+                (new infoDepense(abonne.NoTypeAbonnement, abonnementsDataGridView.SelectedRows[0].Cells[0].Value.ToString(),abonne.Nom + ", " + abonne.Prenom, dateDepense, tbMontant.Value,cbTypeService.Text, frmMenu.userConnect.Nom + ", " + frmMenu.userConnect.Prenom)).ShowDialog();
                 this.Close();
             }
             catch (Exception e1)
@@ -113,6 +112,16 @@ namespace ProjetFinalBD_ZacaryChevrier
                 MessageBox.Show("Erreur", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine(e1);
             }
+        }
+
+        private void btnQuitApp_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(-1);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

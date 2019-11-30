@@ -31,25 +31,25 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dgDepenseEmploye = new System.Windows.Forms.DataGridView();
-            this.employeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeService = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomAbo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgDepenseAbo = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnQuitApp = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnQuitApp = new System.Windows.Forms.Button();
+            this.employeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeService = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomAbo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDepenseEmploye)).BeginInit();
@@ -93,38 +93,9 @@
             this.dgDepenseEmploye.Location = new System.Drawing.Point(6, 6);
             this.dgDepenseEmploye.Name = "dgDepenseEmploye";
             this.dgDepenseEmploye.ReadOnly = true;
+            this.dgDepenseEmploye.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgDepenseEmploye.Size = new System.Drawing.Size(756, 388);
             this.dgDepenseEmploye.TabIndex = 0;
-            // 
-            // employeName
-            // 
-            this.employeName.HeaderText = "Nom de l\'employé";
-            this.employeName.Name = "employeName";
-            this.employeName.ReadOnly = true;
-            // 
-            // typeService
-            // 
-            this.typeService.HeaderText = "Type de service";
-            this.typeService.Name = "typeService";
-            this.typeService.ReadOnly = true;
-            // 
-            // montant
-            // 
-            this.montant.HeaderText = "Montant";
-            this.montant.Name = "montant";
-            this.montant.ReadOnly = true;
-            // 
-            // date
-            // 
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // nomAbo
-            // 
-            this.nomAbo.HeaderText = "Nom de l\'abonné(e)";
-            this.nomAbo.Name = "nomAbo";
-            this.nomAbo.ReadOnly = true;
             // 
             // tabPage2
             // 
@@ -152,14 +123,41 @@
             this.dgDepenseAbo.Location = new System.Drawing.Point(6, 6);
             this.dgDepenseAbo.Name = "dgDepenseAbo";
             this.dgDepenseAbo.ReadOnly = true;
+            this.dgDepenseAbo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgDepenseAbo.Size = new System.Drawing.Size(756, 388);
             this.dgDepenseAbo.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn5
+            // btnBack
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Nom de l\'abonné(e)";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.btnBack.Location = new System.Drawing.Point(14, 444);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(66, 23);
+            this.btnBack.TabIndex = 42;
+            this.btnBack.Text = "Retour";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnQuitApp
+            // 
+            this.btnQuitApp.Location = new System.Drawing.Point(86, 444);
+            this.btnQuitApp.Name = "btnQuitApp";
+            this.btnQuitApp.Size = new System.Drawing.Size(136, 23);
+            this.btnQuitApp.TabIndex = 41;
+            this.btnQuitApp.Text = "Quitter l\'application";
+            this.btnQuitApp.UseVisualStyleBackColor = true;
+            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nom de l\'employé";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Type de service";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -173,17 +171,11 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Type de service";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nom de l\'employé";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Nom de l\'abonné(e)";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -220,25 +212,35 @@
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             this.dataGridViewTextBoxColumn10.Width = 143;
             // 
-            // btnBack
+            // employeName
             // 
-            this.btnBack.Location = new System.Drawing.Point(14, 444);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(66, 23);
-            this.btnBack.TabIndex = 42;
-            this.btnBack.Text = "Retour";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.employeName.HeaderText = "Nom de l\'employé";
+            this.employeName.Name = "employeName";
+            this.employeName.ReadOnly = true;
             // 
-            // btnQuitApp
+            // typeService
             // 
-            this.btnQuitApp.Location = new System.Drawing.Point(86, 444);
-            this.btnQuitApp.Name = "btnQuitApp";
-            this.btnQuitApp.Size = new System.Drawing.Size(136, 23);
-            this.btnQuitApp.TabIndex = 41;
-            this.btnQuitApp.Text = "Quitter l\'application";
-            this.btnQuitApp.UseVisualStyleBackColor = true;
-            this.btnQuitApp.Click += new System.EventHandler(this.btnQuitApp_Click);
+            this.typeService.HeaderText = "Type de service";
+            this.typeService.Name = "typeService";
+            this.typeService.ReadOnly = true;
+            // 
+            // montant
+            // 
+            this.montant.HeaderText = "Montant";
+            this.montant.Name = "montant";
+            this.montant.ReadOnly = true;
+            // 
+            // date
+            // 
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // nomAbo
+            // 
+            this.nomAbo.HeaderText = "Nom de l\'abonné(e)";
+            this.nomAbo.Name = "nomAbo";
+            this.nomAbo.ReadOnly = true;
             // 
             // frmRapport
             // 

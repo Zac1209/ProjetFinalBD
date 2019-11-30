@@ -18,7 +18,7 @@ namespace ProjetFinalBD_ZacaryChevrier
             InitializeComponent();
             lblNom.Text = nom;
             lblDate.Text = date.ToShortDateString();
-            lblMontant.Text = montant.ToString("C") + "$";
+            lblMontant.Text = montant.ToString("C");
             lblService.Text = typeService;
             lblEmploye.Text = employe;
 
